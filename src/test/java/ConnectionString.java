@@ -18,7 +18,7 @@ public class ConnectionString {
         capabilities.setCapability("appium:platformName","Android");
         capabilities.setCapability("appium:deviceName", "emulator-5554");
         capabilities.setCapability("appium:automationName", "UiAutomator2");
-        capabilities.setCapability("appium:app",System.getProperty("user.dir")+"/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
+        capabilities.setCapability("appium:app",System.getProperty("user.dir")+ "/app/DummyAPK.apk");
         capabilities.setCapability("appium:appPackage", "com.swaglabsmobileapp");
         capabilities.setCapability("appium:appActivity", "com.swaglabsmobileapp.SplashActivity");
         capabilities.setCapability("appium:noReset", false); /* cache not maintained */

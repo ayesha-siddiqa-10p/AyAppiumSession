@@ -31,7 +31,7 @@ public class AppFactory {
 
     public static ConfigReader configReader;
 
-    protected HashMap<String, String> stringHashMap = new HashMap<>();
+    public HashMap<String, String> stringHashMap = new HashMap<>();
 
     InputStream stringsIs;
 

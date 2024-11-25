@@ -4,6 +4,7 @@
     <listeners>
         <listener class-name="com.qa.listeners.TestListeners"></listener>
     </listeners>
+
     <test name="ValidLogin">
         <parameter name="platformName" value="Android"></parameter>
         <parameter name="platformVersion" value="15"></parameter>
@@ -12,4 +13,21 @@
             <class name="com.qa.testCases.LoginTest"></class>
         </classes>
     </test>
+    <test name="OpenProductDetails">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="15"></parameter>
+        <parameter name="deviceName" value="emulator-5554"></parameter>
+        <classes>
+            <class name="com.qa.testCases.ProductsTest"></class>
+        </classes>
+    </test>
+    <test name="Logout">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="15"></parameter>
+        <parameter name="deviceName" value="emulator-5554"></parameter>
+        <classes>
+            <class name="com.qa.testCases.LogoutTest"></class>
+        </classes>
+    </test>
+
 </suite>

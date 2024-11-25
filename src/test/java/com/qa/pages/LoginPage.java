@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static com.qa.utils.Utilities.WAIT;
+
 public class LoginPage extends AppFactory {
         public LoginPage() {
             PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
@@ -25,6 +27,8 @@ public class LoginPage extends AppFactory {
 
         @AndroidFindBy(accessibility = "test-LOGIN")
         public WebElement loginBtn;
+
+
 
         By swagslabHeader = By.xpath("//android.widget.ScrollView[@content-desc=\"test-Login\"]/android.view.ViewGroup/android.widget.ImageView[1]");
 
@@ -44,8 +48,11 @@ public class LoginPage extends AppFactory {
                 return  new ProductPage(); // initialiizing the landing page to make the element accessable in testcase
         }
 
+
         public String getErrorMessage() {
                 return getAttribute(errorMessage, "text");
         }
+
+
 
 }
